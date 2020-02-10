@@ -1,0 +1,23 @@
+---
+title: "Cgywin: Taking back control over Windows (lab computers)"
+author: "Philipp Baumann || philipp.baumann@usys.ethz.ch"
+output: 
+  github_document:
+    toc: true
+    toc_depth: 2
+  html_notebook:
+    fig_caption: yes
+    number_sections: yes
+    toc: true
+    toc_depth: 2
+  pdf_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: true
+    toc_depth: 2
+    latex_engine: xelatex
+---
+
+## Overview
+
+[Cgywin](https://cygwin.com/) is aimed at bringing Unix tools to the Windows environment. This repo contains an opinionated set of recipes, and is particularly tailored to people suffering from Windows computers of measurement devices in laboratories.
