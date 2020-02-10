@@ -32,5 +32,5 @@ The Cgywin distribution ships only base packages by default. The executable `set
 
 ## Mounted drives
 
-All system drives such as `C:` are mapped under `/cgydrive`, for example `C:` is can be accessed via `/cgydrive/c`.
+All system drives such as `C:` are mapped under `/cgydrive`, for example `C:` can be accessed via `/cgydrive/c`.
 
