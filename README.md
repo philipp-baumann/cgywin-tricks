@@ -17,7 +17,7 @@ of measurement devices in laboratories.
 
 The Cgywin distribution ships only base packages by default. The
 executable `setup-x86.exe` provides updates and serves to install new
-packages. You can also acccess setup functionality via the Cgywin shell,
+packages. You can also access setup functionality via the Cgywin shell,
 for example:
 
 ``` bash
