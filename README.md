@@ -1,4 +1,4 @@
-Cgywin: Taking back control over Windows (lab computers)
+Cygwin: Taking back control over Windows (lab computers)
 ================
 Philipp Baumann || <philipp.baumann@usys.ethz.ch>
 
@@ -10,12 +10,12 @@ Philipp Baumann || <philipp.baumann@usys.ethz.ch>
 Overview
 --------
 
-[Cgywin](https://cygwin.com/) is aimed at bringing Unix tools to the Windows environment. This repo contains an opinionated set of recipes, and is particularly tailored to people suffering from Windows computers of measurement devices in laboratories.
+[Cygwin](https://cygwin.com/) is aimed at bringing Unix tools to the Windows environment. This repo contains an opinionated set of recipes, and is particularly tailored to people suffering from Windows computers of measurement devices in laboratories.
 
 Updating packages
 -----------------
 
-The Cgywin distribution ships only base packages by default. The executable `setup-x86.exe` provides updates and serves to install new packages. You can also access setup functionality via the Cgywin shell, for example:
+The Cygwin distribution ships only base packages by default. The executable `setup-x86.exe` provides updates and serves to install new packages. You can also access setup functionality via the Cygwin shell, for example:
 
 ``` bash
 # Change to the directory where `setup-x86_64.exe` is located
@@ -30,7 +30,7 @@ All system drives such as `C:` are mapped under `/cygdrive`, for example `C:` ca
 Backup
 ------
 
-Below is an example how to backup spektrometer sofware located in public documents to a NAS mounted as `Q:`. Copy this shell script in a text file called `backup-pdocs.sh` in the Cgywin home folder (see [here](https://www.howtogeek.com/175008/the-non-beginners-guide-to-syncing-data-with-rsync/) to get a glimpse of the magic):
+Below is an example how to backup spektrometer sofware located in public documents to a NAS mounted as `Q:`. Copy this shell script in a text file called `backup-pdocs.sh` in the Cygwin home folder (see [here](https://www.howtogeek.com/175008/the-non-beginners-guide-to-syncing-data-with-rsync/) to get a glimpse of the magic):
 
 ``` bash
 #!/bin/bash
@@ -60,7 +60,7 @@ chmod +x ~/backup-pdocs.sh
 Last but not least, install the `dos2unix` utility to change from two-character linebreaks (DOS/Windows) to one-character (line feed; Unix):
 
 ``` bash
-# change to the folder that contains the executable (in Cgywin shell)
+# change to the folder that contains the executable (in Cygwin shell)
 setup-x86_64.exe -q -P dos2unix
 ```
 
