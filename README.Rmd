@@ -38,7 +38,7 @@ All system drives such as `C:` are mapped under `/cygdrive`, for example `C:` ca
 
 ## Backup
 
-Below is an example how to backup spektrometer sofware located in public documents to a NAS mounted as `Q:`. Copy this shell script in a text file called `backup-pdocs.sh` in the Cygwin home folder (see [here](https://www.howtogeek.com/175008/the-non-beginners-guide-to-syncing-data-with-rsync/) to get a glimpse of the magic):
+Below is an example how to backup spectrometer sofware located in public documents to a NAS mounted as `Q:`. Copy this shell script in a text file called `backup-pdocs.sh` in the Cygwin home folder (see [here](https://www.howtogeek.com/175008/the-non-beginners-guide-to-syncing-data-with-rsync/) to get a glimpse of the magic):
 
 ```{bash, eval=FALSE}
 #!/bin/bash
