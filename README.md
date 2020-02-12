@@ -2,37 +2,35 @@ Cgywin: Taking back control over Windows (lab computers)
 ================
 Philipp Baumann || <philipp.baumann@usys.ethz.ch>
 
-## Overview
+-   [Overview](#overview)
+-   [Updating packages](#updating-packages)
+-   [Mounted drives](#mounted-drives)
+-   [Backup](#backup)
 
-[Cgywin](https://cygwin.com/) is aimed at bringing Unix tools to the
-Windows environment. This repo contains an opinionated set of recipes,
-and is particularly tailored to people suffering from Windows computers
-of measurement devices in laboratories.
+Overview
+--------
 
-## Updating packages
+[Cgywin](https://cygwin.com/) is aimed at bringing Unix tools to the Windows environment. This repo contains an opinionated set of recipes, and is particularly tailored to people suffering from Windows computers of measurement devices in laboratories.
 
-The Cgywin distribution ships only base packages by default. The
-executable `setup-x86.exe` provides updates and serves to install new
-packages. You can also access setup functionality via the Cgywin shell,
-for example:
+Updating packages
+-----------------
+
+The Cgywin distribution ships only base packages by default. The executable `setup-x86.exe` provides updates and serves to install new packages. You can also access setup functionality via the Cgywin shell, for example:
 
 ``` bash
 # Change to the directory where `setup-x86_64.exe` is located
 setup-x86_64.exe -q -P wget -P gcc-g++ -P make -P diffutils -P libmpfr-devel -P libgmp-devel -P libmpc-devel
 ```
 
-## Mounted drives
+Mounted drives
+--------------
 
-All system drives such as `C:` are mapped under `/cgydrive`, for example
-`C:` can be accessed via `/cgydrive/c`.
+All system drives such as `C:` are mapped under `/cgydrive`, for example `C:` can be accessed via `/cgydrive/c`.
 
-## Backup
+Backup
+------
 
-Below is an example how to backup spektrometer sofware located in public
-documents to a NAS mounted as `Q:`. Copy this shell script in a text
-file called `backup-pdocs.sh` in the Cgywin home folder (see
-[here](https://www.howtogeek.com/175008/the-non-beginners-guide-to-syncing-data-with-rsync/)
-to get a glimpse of the magic):
+Below is an example how to backup spektrometer sofware located in public documents to a NAS mounted as `Q:`. Copy this shell script in a text file called `backup-pdocs.sh` in the Cgywin home folder (see [here](https://www.howtogeek.com/175008/the-non-beginners-guide-to-syncing-data-with-rsync/) to get a glimpse of the magic):
 
 ``` bash
 #!/bin/bash
@@ -59,9 +57,7 @@ Then, make it executable with
 chmod +x ~/backup-pdocs.sh
 ```
 
-Last but not least, install the `doc2unix` utility to change from
-two-character linebreaks (DOS/Windows) to one-character (line feed;
-Unix):
+Last but not least, install the `dos2unix` utility to change from two-character linebreaks (DOS/Windows) to one-character (line feed; Unix):
 
 ``` bash
 # change to the folder that contains the executable (in Cgywin shell)
@@ -74,7 +70,7 @@ Then, convert it with
 dos2unix ~/backup-pdocs.sh
 ```
 
-Rock’n’roll backup is done like this:
+Rock'n'roll backup is done like this:
 
 ``` bash
 # Create first time file

@@ -65,7 +65,7 @@ Then, make it executable with
 chmod +x ~/backup-pdocs.sh
 ```
 
-Last but not least, install the `doc2unix` utility to change from two-character linebreaks (DOS/Windows) to one-character (line feed; Unix):
+Last but not least, install the `dos2unix` utility to change from two-character linebreaks (DOS/Windows) to one-character (line feed; Unix):
 
 ```{bash, eval=FALSE}
 # change to the folder that contains the executable (in Cgywin shell)
