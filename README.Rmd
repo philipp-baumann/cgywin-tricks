@@ -33,7 +33,7 @@ setup-x86_64.exe -q -P wget -P gcc-g++ -P make -P diffutils -P libmpfr-devel -P 
 
 ## Mounted drives
 
-All system drives such as `C:` are mapped under `/cgydrive`, for example `C:` can be accessed via `/cgydrive/c`. By default, the "root" directory is in `C:\cygwin`.
+All system drives such as `C:` are mapped under `/cygdrive`, for example `C:` can be accessed via `/cygdrive/c`. By default, the "root" directory is in `C:\cygwin`. This means home is in `C:\cygwin\home`. Volume mounts occur under `C:\cygwin\cygdrive`.
 
 
 ## Backup
